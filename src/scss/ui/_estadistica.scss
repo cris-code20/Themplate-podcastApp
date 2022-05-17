@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.estadisticas{
+    padding: 3rem 0;
+    @include m.tablet{
+        padding: 8rem 0;
+    }
+
+    h2{
+        @include m.heading(v.$secundario, v.$primario)
+    }
+
+    span{
+        color: red;
+        text-transform: capitalize;
+    }
+}
